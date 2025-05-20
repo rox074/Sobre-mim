@@ -1,0 +1,65 @@
+.header{
+    width: 1440px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: rgba(245, 243, 240, 1);
+}
+
+.container-perfil{
+    align-items: center;
+    display: flex;
+}
+
+.container-perfil img{
+    width: 350px;
+    height: auto;
+    margin: 165px;
+    border-radius: 175px;
+}
+.container-perfil h2{
+    font-family: "PlayfairDisplay";
+    width: 635px;
+    font-size: 126px;
+    line-height: 112px;
+    letter-spacing: -2.17px;
+}
+
+.texto p{
+    margin-bottom: -90px;
+    width: 635px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: rgba(158, 140, 108, 1);
+}
+
+.btn a{
+    margin-top: -70px;
+    display: inline-block;
+    background-color: rgba(6, 153, 166, 1);
+    font-weight: 700;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.lateral-1{
+    width: 350px;
+    height: 1559px;
+    align-items: center;
+    margin: 123px 400px;
+}
+
+.lateral-1 h2{
+    color: rgba(158, 140, 108, 1);
+    width: 250px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
