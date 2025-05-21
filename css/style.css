@@ -6,6 +6,7 @@
 }
 
 .container-perfil{
+    padding: 157px;
     align-items: center;
     display: flex;
 }
@@ -13,15 +14,21 @@
 .container-perfil img{
     width: 350px;
     height: auto;
-    margin: 165px;
+    margin: 0 auto;
     border-radius: 175px;
 }
+
 .container-perfil h2{
     font-family: "PlayfairDisplay";
     width: 635px;
     font-size: 126px;
     line-height: 112px;
     letter-spacing: -2.17px;
+}
+
+.container{
+    width: 1024px;
+    align-items: center;
 }
 
 .texto p{
@@ -50,10 +57,13 @@
 
 .lateral-1{
     width: 350px;
-    height: 1559px;
+    height: 1459px;
     align-items: center;
-    margin: 123px 400px;
+    padding: 100px;
+    margin: 0 auto;
+    line-height: 24.2px;
 }
+
 
 .lateral-1 h2{
     color: rgba(158, 140, 108, 1);
@@ -62,4 +72,112 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 2px;
+}
+
+.lateral-2 p{
+    width: 350px;
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lateral-2 h2{
+    color: rgba(158, 140, 108, 1);
+}
+
+.texto-awards{
+    margin-top: 100px;
+}
+
+.texto-career{
+    max-width: 350px;
+    height: 544px;
+    margin-top: 100px;
+}
+
+.texto-career p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.palavras-destaque{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.seta{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0px;
+}
+
+.recent-works a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0px;
+    display: block;
+    color: rgba(6, 153, 166, 1);
+}
+
+.footer{
+    width: 1440px;
+    height: 574px;
+    margin: 0 auto;
+    background: rgba(245, 243, 240, 1);
+}
+
+.footer-box{
+    width: 793px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 140px;
+}
+
+.footer-box h2{
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 82px;
+    letter-spacing: -1.14px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-box h3{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0px;
+    margin: 0 auto;
+    color: rgba(6, 153, 166, 1);
+}
+
+.info{
+    width: 242.96px;
+    height: 25.14px;
+    margin: 0 auto;
+    padding: 19px;
+    list-style: none;
+    letter-spacing: 35px;
+}
+
+.info ul{
+    display: flex;
+    justify-content: center;
+}
+
+.info li{
+    display: flex;
+    letter-spacing: 35px;
+}
+
+.info a{
+    align-items: center;
 }
