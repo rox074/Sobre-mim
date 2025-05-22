@@ -1,0 +1,283 @@
+
+.envelope{
+    width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+
+.banner{
+    width: 100%;
+    height: 700px;
+    background-color:#F5F3F0;
+    display: flex;
+    margin: 0 auto;
+}
+
+.box1{
+    margin: 0 auto;
+}
+
+.box1 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+}
+
+.titulo{
+    width: 635px;
+}
+
+.titulo h2{
+    margin: 0 auto;
+}
+
+.box2{
+    margin: 0 auto;
+}
+
+.titulo p{
+    font-size: 18px;
+    color: #9E8C6C;
+    font-weight: 700;
+}
+
+.titulo h2{
+    font-size: 126px;
+    color: #000000;
+    font-weight: 900;
+    line-height: 112px;
+    letter-spacing: -2.17px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 20px 50px;
+    text-decoration: none;
+    background-color: #0699A6;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.container{
+    width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container h3{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 46px;
+    letter-spacing: 0px;
+}
+
+.quadradinho{
+    width: 71px;
+    height: 10px;
+    background-color: #0699A6;
+    margin: 0 40px;
+}
+
+.coluna-esquerda{
+    margin: 0 auto;
+    width: 350px;
+}
+
+.coluna-esquerda h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #9E8C6C;
+    font-size: 20px;
+}
+
+.coluna-esquerda p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0px;
+}
+
+.coluna-esquerda ul{
+    text-decoration: none;
+    list-style: none;
+    line-height: 34px;
+}
+
+.caixa-1{
+    align-items: center;
+}
+
+.seta{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0px;
+}
+
+.destaque{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.button{
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #0699A6;
+    display: block;
+    font-size: 20px;
+}
+
+.coluna-direita{
+    width: 635px;
+    padding: 60px;
+}
+
+.coluna-direita p{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    
+}
+
+.coluna-direita ul{
+    list-style: none;
+}
+
+.destaque2{
+    color: #9E8C6C;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.rodape{
+    background-color: #F5F3F0;
+    width: 100%;
+    height: 547px;
+    text-align: center;
+}
+
+.rodape h2{
+    font-size: 66px;
+}
+
+.rodape h3{
+    font-size: 36px;
+    color: #0699A6;
+}
+
+.caixa-11{
+    padding: 85px;
+}
+
+.comunicacao h4{
+    margin-top: -30px;
+    font-size: 36px;
+    color: #0699A6;
+}
+
+.redes ul{
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-top: -30px;
+    padding: 0;
+}
+
+.redes li{
+    margin: 0 20px;
+}
+
+@media (max-width: 1023px) {
+    .envelope{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .banner {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1,
+    .box2 {
+        margin: 20px auto;
+    }
+
+    .box1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box2 {
+        margin: 0;
+    }
+
+    .box2 h2 {
+        font-size: 48px;
+    }
+
+    .box2 h4 {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .titulo{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+
+    .coluna-esquerda,
+    .coluna-direita {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .rodape h2 {
+        font-size: 32px;
+    }
+
+    .rodape h3 {
+        font-size: 20px;
+    }
+
+    .caixa-11 {
+        padding: 40px 20px;
+    }
+
+    .redes ul {
+        flex-wrap: wrap;
+    }
+
+    .redes li {
+        margin: 10px;
+    }
+}
