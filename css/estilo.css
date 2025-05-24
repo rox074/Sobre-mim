@@ -1,283 +1,382 @@
+:Root {
+    --color-primary: #8DADC5;
+    --color-secundary: #9E8C6C;
+    --color-titulo: #FFFFFF;
 
-.envelope{
-    width: 1440px;
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
+    /* -- PIXELS --*/
+    --px8: 8px;
+    --px16: 16px;
+    --px24: 24px;
+
+    /* -- DEVICE -- */
+    --deskfull: 1920px;
+    --deskdefault: 1024px;
+
+    /* -- SEPARADOR SEÇÃO --*/
+    --separador-desk: 100px 100px;
 }
 
-.banner{
-    width: 100%;
+header {
+    background-color: var(--color-primary);
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1440px;
     height: 700px;
-    background-color:#F5F3F0;
-    display: flex;
-    margin: 0 auto;
-}
-
-.box1{
-    margin: 0 auto;
-}
-
-.box1 img{
+    align-items: center;
+  }
+  
+  .imagem-perfil {
+    padding-left: 156px;
+  }
+  
+  .imagem-perfil img {
     width: 350px;
     height: 350px;
-    border-radius: 175px;
-}
+    border-radius: 100%;
+  }
+  
+  .career-traits li {
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
 
-.titulo{
-    width: 635px;
-}
+  .habilidades,
+  .awards,
+  .career-traits {
+    margin-bottom: 100px;
+  }
 
-.titulo h2{
-    margin: 0 auto;
-}
-
-.box2{
-    margin: 0 auto;
-}
-
-.titulo p{
-    font-size: 18px;
-    color: #9E8C6C;
-    font-weight: 700;
-}
-
-.titulo h2{
-    font-size: 126px;
-    color: #000000;
-    font-weight: 900;
-    line-height: 112px;
-    letter-spacing: -2.17px;
-}
-
-.btn{
-    display: inline-block;
-    padding: 20px 50px;
-    text-decoration: none;
-    background-color: #0699A6;
-    color: #FFFFFF;
-    font-size: 18px;
-}
-
-.container{
-    width: 1440px;
+  section {
     display: flex;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.container h3{
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 46px;
-    letter-spacing: 0px;
-}
-
-.quadradinho{
-    width: 71px;
-    height: 10px;
-    background-color: #0699A6;
-    margin: 0 40px;
-}
-
-.coluna-esquerda{
-    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .coluna-esquerda {
+    margin-top: 123px;
     width: 350px;
-}
-
-.coluna-esquerda h4{
+    height: auto;
+    background-color: #fff;
+  }
+  
+  .coluna-esquerda h3 {
+    color: var(--color-secundary);
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 2px;
-    color: #9E8C6C;
-    font-size: 20px;
-}
-
-.coluna-esquerda p{
-    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .coluna-esquerda p,
+  .coluna-esquerda li {
     font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0px;
-}
-
-.coluna-esquerda ul{
-    text-decoration: none;
-    list-style: none;
-    line-height: 34px;
-}
-
-.caixa-1{
-    align-items: center;
-}
-
-.seta{
-    font-weight: 700;
     font-size: 20px;
     line-height: 34px;
-    letter-spacing: 0px;
-}
+    letter-spacing: 0;
+  }
 
-.destaque{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 34px;
-}
-
-.button{
+  .recent-works li {
+    color: #0699A6;
+  }
+  
+  .recent-works a {
     font-weight: 600;
-    line-height: 34px;
-    letter-spacing: 0px;
-    text-decoration: none;
-    color: #0699A6;
-    display: block;
-    font-size: 20px;
-}
+    text-decoration: none; 
+    color: var(--color-primary);
+  }
+  
+  .recent-works a:hover {
+    text-decoration: underline; 
+  }
 
-.coluna-direita{
-    width: 635px;
-    padding: 60px;
-}
-
-.coluna-direita p{
-    font-size: 20px;
-    line-height: 34px;
-    font-weight: 400;
-    
-}
-
-.coluna-direita ul{
-    list-style: none;
-}
-
-.destaque2{
-    color: #9E8C6C;
+  .apresentacao {
+    padding: 0 125px;
+  }
+  
+  .apresentacao h1 {
+    font-size: 126px;
+    letter-spacing: -2.17px;
+    line-height: 112px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  
+  .apresentacao h3 {
     font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1px;
-}
-
-.rodape{
-    background-color: #F5F3F0;
-    width: 100%;
-    height: 547px;
-    text-align: center;
-}
-
-.rodape h2{
-    font-size: 66px;
-}
-
-.rodape h3{
-    font-size: 36px;
-    color: #0699A6;
-}
-
-.caixa-11{
-    padding: 85px;
-}
-
-.comunicacao h4{
-    margin-top: -30px;
-    font-size: 36px;
-    color: #0699A6;
-}
-
-.redes ul{
-    justify-content: center;
-    display: flex;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-secundary);
+  }
+  
+  .apresentacao a {
+    background-color: #FFFFFF;
+    color: black;
     text-decoration: none;
+    text-align: center;
+    padding: 18px 62px;
+    font-size: 18px;
+  }
+  
+  .coluna-direita {
+    width: 635px;
+    height: auto;
+    margin-top: 123px;
+    margin-left: 138px;
+    background-color: #fff;
+  }
+  
+  .about-me {
+    margin-bottom: 72px;
+    width: 635px;
+    height: 326px;
+  }
+  
+  .coluna-direita p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+  }
+  
+  .barra-destaque {
+    background-color: var(--color-primary);
+    width: 76px;
+    height: 10px;
+    margin-top: 80px;
+  }
+  
+  .coluna-direita h2 {
+    font-size: 36px;
+  }
+  
+  .cards {
+    width: 635px;
+    margin-bottom: 64px;
+  }
+  
+  .cards p {
+    line-height: 32px;
+    margin-top: -8px;
+  }
+  
+  .texto-exp {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: -20px;
+  }
+  
+  .texto-exp h3 {
+    font-weight: 700;
+    color: var(--color-secundary);
+  }
+
+  .texto-exp h4{
+    font-weight: 400;
+  }
+  
+  .formacao h2 {
+    margin-top: 70px;
+  }
+  
+  .detalhes-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+  }
+  
+  .detalhes-form h3 {
+    color: var(--color-secundary);
+  }
+
+  .detalhes-form h4{
+    font-weight: 400;
+  }
+  
+  ul {
     list-style: none;
-    margin-top: -30px;
-    padding: 0;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  
+  footer {
+    display: flex;
+    align-content: center;
+    max-width: 100%;
+    min-height: 560px;
+    background-color: var(--color-primary);
+    margin-top: 80px;
+  }
+
+  .botoes-redes {
+    width: 244px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .rodape {
+    text-align: center;
+    width: 793px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 158px;
+    padding-bottom: 116px;
+  }
+  
+  .rodape h2 {
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 82px;
+  }
+  
+  .rodape a {
+    color: var(--color-link);
+  }
+
+  .buscando-op{
+    background-color: var(--color-primary);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .buscando-op p{
+    margin: 0 auto;
+  }
+
+.contatos{
+    display: block;
 }
 
-.redes li{
-    margin: 0 20px;
-}
-
-@media (max-width: 1023px) {
-    .envelope{
-        width: 100%;
-        flex-direction: column;
-    }
+  .contatos a{
+    display: block;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  @media screen and (max-width: 1023px) {
+  
     .container {
-        width: 100%;
-        flex-direction: column-reverse;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+    }
+  
+    .apresentacao {
+      width: 100%;
+      height: auto;
+      margin: 20px auto 60px;
+      text-align: center;
+      padding: 0 24px;
+      box-sizing: border-box;
+    }
+  
+    .apresentacao h1 {
+      font-size: 64px;
+      line-height: 72px;
+      margin-bottom: 20px;
+    }
+  
+    .apresentacao h3 {
+      font-size: 14px;
+    }
+  
+    .apresentacao a {
+      padding: 14px 30px;
+      font-size: 18px;
     }
 
-    .banner {
-        height: auto;
-        padding: 40px 20px;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
+    .imagem-perfil {
+        margin: 40px auto;
+        padding-left: 0;
+      }
+    
+      .imagem-perfil img {
+        width: 220px;
+        height: 220px;
     }
-
-    .box1,
-    .box2 {
-        margin: 20px auto;
+  
+    section {
+      align-items: center;
+      flex-direction: column-reverse;
+      width: 100%;
+      margin: 0 auto;
     }
-
-    .box1 img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .box2 {
-        margin: 0;
-    }
-
-    .box2 h2 {
-        font-size: 48px;
-    }
-
-    .box2 h4 {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    .titulo{
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .btn {
-        padding: 15px 30px;
-        font-size: 16px;
-    }
-
-
+  
     .coluna-esquerda,
     .coluna-direita {
-        width: 100%;
-        padding: 20px;
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+  
+    .experiencia {
+      margin-top: 60px;
+    }
+  
+    .about-me {
+      width: 100%;
+      height: auto;
+    }
+  
+    .cards {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  
+    .coluna-direita {
+      margin-left: 0;
+    }
+  
+    .texto-exp,
+    .detalhes-form {
+      flex-direction: column;
+      width: 100%;
     }
 
-    .rodape {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .rodape h2 {
-        font-size: 32px;
-    }
-
-    .rodape h3 {
-        font-size: 20px;
-    }
-
-    .caixa-11 {
-        padding: 40px 20px;
-    }
-
-    .redes ul {
+    .botoes-redes {
         flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+      }
+  
+    .rodape {
+      width: 100%;
+      padding: 60px 16px;
     }
-
-    .redes li {
-        margin: 10px;
+  
+    .rodape h2 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  
+    .rodape h3 {
+      font-size: 20px;
+      line-height: 28px;
     }
 }
+  @media screen and (max-width: 480px) {
+    .apresentacao h1 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  
+    .apresentacao a {
+      padding: 12px 20px;
+      font-size: 18px;
+    }
+  }
