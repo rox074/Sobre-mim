@@ -1,23 +1,16 @@
-:Root {
-    --color-primary: #8DADC5;
-    --color-secundary: #9E8C6C;
-    --color-titulo: #FFFFFF;
+:root {
+    --color-primary: #333333;
+    --color-secundary: #DDDDDD;
+    --color-ad: #FFFFFF;
 
-    /* -- PIXELS --*/
-    --px8: 8px;
-    --px16: 16px;
-    --px24: 24px;
-
-    /* -- DEVICE -- */
-    --deskfull: 1920px;
-    --deskdefault: 1024px;
-
-    /* -- SEPARADOR SEÇÃO --*/
-    --separador-desk: 100px 100px;
 }
 
+body{
+  background-color: var(--color-primary);
+  margin: 0 auto;
+}
 header {
-    background-color: var(--color-primary);
+    background: var(--color-secundary);
     justify-content: center;
     margin: 0 auto;
     display: flex;
@@ -30,39 +23,70 @@ header {
     align-items: center;
   }
   
-  .imagem-perfil {
+  .imagem_perfil {
     padding-left: 156px;
   }
   
-  .imagem-perfil img {
+  .imagem_perfil img {
     width: 350px;
     height: 350px;
     border-radius: 100%;
   }
   
-  .career-traits li {
-    line-height: 38px;
-    margin-bottom: 20px;
+  .inicio {
+    padding: 0 125px;
   }
-
-  .habilidades,
-  .awards,
-  .career-traits {
-    margin-bottom: 100px;
+  
+  .inicio h1 {
+    color: var(--color-primary);
+    font-size: 126px;
+    letter-spacing: -2.17px;
+    line-height: 112px;
+    margin-bottom: 40px;
+    margin-top: 10px;
   }
-
+  
+  .inicio h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  
+  .inicio a {
+    border: 1px solid white;
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 62px;
+  }
+  
+  
   section {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
+    background-color: var(--color-primary);
+  }
+  
+  .habilidades{
+    color: var(--color-ad);
+  }
+  .premiacoes{
+    color: var(--color-ad);
+  }
+  .caracteristicas {
+    margin-bottom: 100px;
+    color: var(--color-ad);
   }
   
   .coluna-esquerda {
     margin-top: 123px;
     width: 350px;
     height: auto;
-    background-color: #fff;
+    background-color: var(--color-primary);
   }
   
   .coluna-esquerda h3 {
@@ -71,7 +95,6 @@ header {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 2px;
-    text-transform: uppercase;
   }
   
   .coluna-esquerda p,
@@ -81,47 +104,24 @@ header {
     line-height: 34px;
     letter-spacing: 0;
   }
-
-  .recent-works li {
-    color: #0699A6;
+  
+  .caracteristicas li {
+    line-height: 38px;
+    margin-bottom: 20px;
   }
   
-  .recent-works a {
-    font-weight: 600;
+  .trabalhos-recentes li {
+    color: var(--color-ad);
+  }
+  
+  .trabalhos-recentes a {
     text-decoration: none; 
-    color: var(--color-primary);
+    color: white;
+    font-size: 18px;
   }
   
-  .recent-works a:hover {
+  .trabalhos-recentes a:hover {
     text-decoration: underline; 
-  }
-
-  .apresentacao {
-    padding: 0 125px;
-  }
-  
-  .apresentacao h1 {
-    font-size: 126px;
-    letter-spacing: -2.17px;
-    line-height: 112px;
-    margin-bottom: 40px;
-    margin-top: 10px;
-  }
-  
-  .apresentacao h3 {
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--color-secundary);
-  }
-  
-  .apresentacao a {
-    background-color: #FFFFFF;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    padding: 18px 62px;
-    font-size: 18px;
   }
   
   .coluna-direita {
@@ -129,254 +129,276 @@ header {
     height: auto;
     margin-top: 123px;
     margin-left: 138px;
-    background-color: #fff;
+    background-color: var(--color-primary);
   }
   
-  .about-me {
+  .meu {
     margin-bottom: 72px;
     width: 635px;
     height: 326px;
+    color: white;
   }
   
   .coluna-direita p {
     font-weight: 400;
     font-size: 20px;
     line-height: 34px;
+    color: var(--color-ad);
   }
-  
-  .barra-destaque {
-    background-color: var(--color-primary);
+
+  .tell {
+    display: block;
+  }
+  .tell a{
+    display: block;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 15px;
+    color: var(--color-primary);
+    margin: 0 auto;
+    
+  }
+  .barra_destaque {
+    background: var(--color-secundary);
     width: 76px;
     height: 10px;
     margin-top: 80px;
   }
-  
+
   .coluna-direita h2 {
     font-size: 36px;
   }
   
-  .cards {
+  .cartao {
     width: 635px;
     margin-bottom: 64px;
   }
   
-  .cards p {
+  .cartao p {
     line-height: 32px;
     margin-top: -8px;
   }
   
-  .texto-exp {
+  .detalhes_experiencia {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     margin-top: -20px;
   }
-  
-  .texto-exp h3 {
-    font-weight: 700;
+  .buscando{
+    background: var(--color-secundary);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .buscando p{
+    margin: 0 auto;
+    color: var(--color-primary);
+  }
+  .detalhes_experiencia h3 {
     color: var(--color-secundary);
   }
-
-  .texto-exp h4{
+  .detalhes_experiencia h4 {
     font-weight: 400;
+    color: var(--color-secundary);
   }
-  
   .formacao h2 {
     margin-top: 70px;
+    color: white;
   }
   
-  .detalhes-form {
+  .detalhes_formacao {
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
   }
-  
-  .detalhes-form h3 {
-    color: var(--color-secundary);
+  .experiencia{
+    color: var(--color-ad);
   }
-
-  .detalhes-form h4{
+  .detalhes_formacao h3 {
+    color: var(--color-ad);
+  }
+  .detalhes_formacao h4 {
     font-weight: 400;
+    color: var(--color-ad);
   }
-  
   ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
   }
   
-  
+
   footer {
     display: flex;
     align-content: center;
     max-width: 100%;
-    min-height: 560px;
-    background-color: var(--color-primary);
+    background: var(--color-secundary);
     margin-top: 80px;
   }
-
-  .botoes-redes {
+  
+  .conteudo {
+    text-align: center;
+    width: 793px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0px;
+  }
+  
+  .conteudo h2 {
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 82px;
+    color: var(--color-primary);
+  }
+  
+  .conteudo h3 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--color-primary);
+  }
+  
+  .redes {
     width: 244px;
     height: 24px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 10px;
+    color: white;
   }
-  
-  .rodape {
+
+  .redes a{
+    padding: 40px 0px;
+  }
+
+  .imgsss{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imgsss ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imgsss a{
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-ad);
+  }
+
+  .imgsss a{
+    color: var(--color-secundary);
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 1023px) {
+
+  header, section, footer {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 793px;
+  }
+
+  .container {
+    flex-direction: column;
     height: auto;
-    margin: 0 auto;
-    padding-top: 158px;
-    padding-bottom: 116px;
-  }
-  
-  .rodape h2 {
-    font-weight: 900;
-    font-size: 66px;
-    line-height: 82px;
-  }
-  
-  .rodape a {
-    color: var(--color-link);
+    padding: 40px 20px;
   }
 
-  .buscando-op{
-    background-color: var(--color-primary);
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 25px;
+  .imagem_perfil {
+    padding-left: 0;
+    margin-bottom: 30px;
   }
 
-  .buscando-op p{
-    margin: 0 auto;
+  .imagem_perfil img {
+    width: 200px;
+    height: 200px;
   }
 
-.contatos{
-    display: block;
-}
+  .inicio {
+    padding: 0 20px;
+  }
 
-  .contatos a{
-    display: block;
-    font-weight: 900;
+  .inicio h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .inicio h3 {
+    font-size: 14px;
+  }
+
+  .inicio a {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .coluna-esquerda, .coluna-direita {
+    width: 100%;
+    margin: 0;
+  }
+
+  .coluna-direita {
+    margin-left: 0;
+  }
+
+  .meu {
+    width: 100%;
+    height: auto;
+  }
+
+  .cartao {
+    width: 100%;
+  }
+
+  .barra_destaque {
+    width: 40px;
+    height: 6px;
+    margin: 20px auto;
+  }
+
+  .detalhes_experiencia,
+  .detalhes_formacao {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .conteudo {
+    width: 100%;
+  }
+
+  .conteudo h2 {
     font-size: 36px;
-    line-height: 46px;
+    line-height: 48px;
   }
-  
-  @media screen and (max-width: 1023px) {
-  
-    .container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: auto;
-    }
-  
-    .apresentacao {
-      width: 100%;
-      height: auto;
-      margin: 20px auto 60px;
-      text-align: center;
-      padding: 0 24px;
-      box-sizing: border-box;
-    }
-  
-    .apresentacao h1 {
-      font-size: 64px;
-      line-height: 72px;
-      margin-bottom: 20px;
-    }
-  
-    .apresentacao h3 {
-      font-size: 14px;
-    }
-  
-    .apresentacao a {
-      padding: 14px 30px;
-      font-size: 18px;
-    }
 
-    .imagem-perfil {
-        margin: 40px auto;
-        padding-left: 0;
-      }
-    
-      .imagem-perfil img {
-        width: 220px;
-        height: 220px;
-    }
-  
-    section {
-      align-items: center;
-      flex-direction: column-reverse;
-      width: 100%;
-      margin: 0 auto;
-    }
-  
-    .coluna-esquerda,
-    .coluna-direita {
-      width: 100%;
-      height: auto;
-      margin: 20px 0;
-      padding: 0 30px;
-      box-sizing: border-box;
-    }
-  
-    .experiencia {
-      margin-top: 60px;
-    }
-  
-    .about-me {
-      width: 100%;
-      height: auto;
-    }
-  
-    .cards {
-      width: 100%;
-      margin-bottom: 60px;
-    }
-  
-    .coluna-direita {
-      margin-left: 0;
-    }
-  
-    .texto-exp,
-    .detalhes-form {
-      flex-direction: column;
-      width: 100%;
-    }
+ .conteudo h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    .botoes-redes {
-        flex-wrap: wrap;
-        gap: 12px;
-        justify-content: center;
-      }
-  
-    .rodape {
-      width: 100%;
-      padding: 60px 16px;
-    }
-  
-    .rodape h2 {
-      font-size: 36px;
-      line-height: 44px;
-    }
-  
-    .rodape h3 {
-      font-size: 20px;
-      line-height: 28px;
-    }
+  .tell a {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .redes {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  ul {
+    padding: 0 20px;
+  }
 }
-  @media screen and (max-width: 480px) {
-    .apresentacao h1 {
-      font-size: 48px;
-      line-height: 56px;
-    }
-  
-    .apresentacao a {
-      padding: 12px 20px;
-      font-size: 18px;
-    }
-  }

@@ -1,0 +1,169 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    
+}
+
+.container1{
+    display: flex;
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+
+
+}
+
+.logo_bobs{
+    padding-top: 8px;
+}
+
+.btn{
+width: 60%;
+
+}
+
+.btn ul{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    list-style-type: none;
+    
+}
+
+.btn li{
+    margin: 5% auto;
+    height: 0 auto;
+    
+}
+
+.btn a{
+    text-decoration: none;
+    color: #C12A21;
+}
+
+.btn a:hover{
+    color: rgb(255, 3, 3);
+}
+
+
+.cake_shake{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.cake_shake img{
+    width: 100%;
+}
+
+
+
+
+.container2{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container2 h2{
+    color: #C12A21;
+}
+
+.boxes{
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    
+}
+
+.box{
+    background-color: #C12A21;
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box h2{
+    color: white;
+    text-align: center;
+}
+
+.box img{
+    width: 100%;
+
+}
+
+.botao_box{
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 16px;
+    text-align: center;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 0 ;
+    color: white;
+    background-color: #C12A21;
+}
+
+.footer img{
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px){
+    .header{
+        height: auto;
+    }
+    
+    .container1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cake_shake{
+        width: 100%;
+    }
+    
+    .container2{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .box{
+        margin-bottom: 16px;
+    }
+}
